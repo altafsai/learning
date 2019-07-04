@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="211770" started-at="2019-07-04T15:46:03Z" finished-at="2019-07-04T15:49:34Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="211770" started-at="2019-07-04T15:46:03Z" finished-at="2019-07-04T15:49:34Z">
+      <class name="testCases.VerifyHomePage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.VerifyHomePage@14acaea5]" name="setUp" duration-ms="211708" started-at="2019-07-04T10:46:03Z" finished-at="2019-07-04T10:49:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- testCases.VerifyHomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,7 @@
+factory\BrowserFactory.class
+pages\EbayHomePage.class
+dataProvider\configDataProvider.class
+dataProvider\Exceldataprovider.class
+factory\DataProviderFactory.class
+pages\EbayHomePage2.class
+testCases\VerifyHomePage.class
