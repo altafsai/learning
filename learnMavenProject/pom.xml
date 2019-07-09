@@ -51,6 +51,9 @@
           <suiteXmlFiles>
             <suiteXmlFile>${xmlFile}</suiteXmlFile>
           </suiteXmlFiles>
+          <systemPropertyVariables>
+          <applicationUrl>${url}</applicationUrl>
+          </systemPropertyVariables>
         </configuration>
       </plugin>
 </plugins> 

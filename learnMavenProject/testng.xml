@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
+  <parameter name="url" value="http://www.ebay.com"/>
     <classes>
       <class name="testCases.VerifyHomePage"/>
     </classes>

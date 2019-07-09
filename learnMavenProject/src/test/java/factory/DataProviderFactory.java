@@ -3,7 +3,7 @@ package factory;
 import dataProvider.Exceldataprovider;
 import dataProvider.configDataProvider;
 
-public class DataProviderFactory extends BrowserFactory
+public class DataProviderFactory 
 {
 
 	public static Exceldataprovider getExcel()

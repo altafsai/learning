@@ -10,9 +10,9 @@ public class EbayHomePage2 extends BrowserFactory
 {
 	WebDriver driver;
 
-	public EbayHomePage2(WebDriver ldriver)
+	public EbayHomePage2(WebDriver driver)
 	{
-		this.driver=ldriver;
+		this.driver=driver;
 }
 	
 	@FindBy (xpath="//button[@aria-label='see all - Connectivity - opens dialog']") WebElement seeAll;

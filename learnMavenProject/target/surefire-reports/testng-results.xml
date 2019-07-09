@@ -2,15 +2,26 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="183506" started-at="2019-07-04T16:15:53Z" finished-at="2019-07-04T16:18:56Z">
+  <suite name="Suite" duration-ms="58844" started-at="2019-07-09T16:31:06Z" finished-at="2019-07-09T16:32:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="183506" started-at="2019-07-04T16:15:53Z" finished-at="2019-07-04T16:18:56Z">
+    <test name="Test" duration-ms="58844" started-at="2019-07-09T16:31:06Z" finished-at="2019-07-09T16:32:05Z">
       <class name="testCases.VerifyHomePage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.VerifyHomePage@2096442d]" name="setUp" duration-ms="183478" started-at="2019-07-04T11:15:53Z" finished-at="2019-07-04T11:18:56Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:testCases.VerifyHomePage@13a57a3b]" name="setUp" is-config="true" duration-ms="11835" started-at="2019-07-09T11:31:06Z" finished-at="2019-07-09T11:31:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.ebay.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="drivePages()[pri:0, instance:testCases.VerifyHomePage@13a57a3b]" name="drivePages" duration-ms="46975" started-at="2019-07-09T11:31:18Z" finished-at="2019-07-09T11:32:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drivePages -->
       </class> <!-- testCases.VerifyHomePage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

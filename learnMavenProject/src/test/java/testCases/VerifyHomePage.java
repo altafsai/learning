@@ -2,32 +2,35 @@ package testCases;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import factory.BrowserFactory;
 import factory.DataProviderFactory;
 import pages.EbayHomePage;
 import pages.EbayHomePage2;
 
-public class VerifyHomePage extends BrowserFactory
+public class VerifyHomePage 
 {
-
-	@Test
-	public void setUp() throws Exception
+	WebDriver driver;
+	@BeforeMethod
+	@Parameters("url")
+	public void setUp(String Url) throws Exception
 	{   
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\altaf\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://www.ebay.com");
+		driver.get(Url);
 		
-		
-	/*	BrowserFactory bf= new BrowserFactory();
-		bf.Browserget("Chrome");
-		driver.get(DataProviderFactory.getConfig().appURL());*/
-		
+    }
+	
+	@Test
+	public void drivePages() throws Exception
+	{
 		EbayHomePage ebay= PageFactory.initElements(driver, EbayHomePage.class);
 		ebay.Insertdata("Samsung S7");
 		ebay.clickOnCategory();
@@ -38,9 +41,6 @@ public class VerifyHomePage extends BrowserFactory
 		ebay2.clickOnUnlockedButton();
 		ebay2.clickOnProductSelection();
 		ebay2.clickOnColor();
-		
-
-		
 	}
 	
 	

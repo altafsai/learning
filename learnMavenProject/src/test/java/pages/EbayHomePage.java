@@ -6,13 +6,13 @@ import org.openqa.selenium.support.FindBy;
 
 import factory.BrowserFactory;
 
-public class EbayHomePage extends BrowserFactory
+public class EbayHomePage 
 {
-	//WebDriver driver;
+	WebDriver driver;
 
-	public EbayHomePage(WebDriver ldriver)
+	public EbayHomePage(WebDriver driver)
 	{
-		this.driver=ldriver;
+		this.driver=driver;
 }
 	
 	@FindBy (xpath="//select[@id='gh-cat']") WebElement category;

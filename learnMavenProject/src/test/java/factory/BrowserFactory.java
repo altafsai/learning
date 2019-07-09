@@ -9,7 +9,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BrowserFactory 
 {
-	public WebDriver driver;
+	WebDriver driver;
 
 	public WebDriver Browserget(String browserName)
 	{

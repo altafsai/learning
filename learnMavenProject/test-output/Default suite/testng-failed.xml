@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.VerifyHomePage">
         <methods>
-          <include name="setUp"/>
+          <include name="drivePages"/>
         </methods>
       </class> <!-- testCases.VerifyHomePage -->
     </classes>
